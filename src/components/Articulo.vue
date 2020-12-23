@@ -38,6 +38,10 @@
                                     </v-text-field>
                                 </v-flex>
                                 <v-flex xs12 sm12 md12>
+                                    <v-text-field v-model="descripcionCorta" label="Descripción Corta">                                        
+                                    </v-text-field>
+                                </v-flex>
+                                <v-flex xs12 sm12 md12>
                                     <v-textarea v-model="descripcion" label="Descripción">                                        
                                     </v-textarea>
                                 </v-flex>
@@ -143,10 +147,10 @@
                     { text: 'Código',value: 'codigo', sortable: false},
                     { text: 'Nombre',value: 'nombre', sortable: true},
                     { text: 'Categoría',value: 'categoria.nombre', sortable: true},
-                    { text: 'Stock',value: 'stock', sortable: false},
-                    { text: 'Precio Venta',value: 'precio_venta', sortable: false},
-                    { text: 'Descripción', value: 'descripcion', sortable: false },              
-                    { text: 'Estado', value: 'estado', sortable: false }
+                    { text: 'Descripción', value: 'descripcion', sortable: false },,
+                    { text: 'Descripción Corta',value: 'descripcionCorta', sortable: false},
+                    { text: 'Url Icono',value: 'urlIcono', sortable: false},             
+                    { text: 'Estado', value: 'estado', sortable: true }
                 ],
                 id:'',
                 editedIndex: -1,
@@ -157,6 +161,9 @@
                 stock:0,
                 precio_venta:0,
                 descripcion:'',
+                descripcionCorta:'',
+                urlImagen:'',
+                urlIcono:'',
                 valida:0,
                 validaMensaje:[],
                 adModal:0,
@@ -214,6 +221,9 @@
                 this.valida=0;
                 this.validaMensaje=[];
                 this.editedIndex=-1;
+                this.descripcionCorta = '';
+                this.urlImagen = '';
+                this.urlIcono='';
             },
             validar(){
                 this.valida=0;
@@ -248,7 +258,10 @@
                         'nombre':this.nombre,
                         'stock':this.stock,
                         'precio_venta':this.precio_venta,
-                        'descripcion':this.descripcion
+                        'descripcion':this.descripcion,
+                        'descripcionCorta':this.descripcionCorta,
+                        'urlImagen':this.urlImagen,
+                        'urlIcono':this.urlIcono
                     },configuracion)
                     .then(function(response){
                         me.limpiar();
@@ -267,7 +280,10 @@
                         'nombre':this.nombre,
                         'stock':this.stock,
                         'precio_venta':this.precio_venta,
-                        'descripcion':this.descripcion
+                        'descripcion':this.descripcion,
+                        'descripcionCorta':this.descripcionCorta,
+                        'urlImagen':this.urlImagen,
+                        'urlIcono':this.urlIcono
                     },configuracion)
                     .then(function(response){
                         me.limpiar();
@@ -287,6 +303,9 @@
                 this.stock=item.stock;
                 this.precio_venta=item.precio_venta;
                 this.descripcion=item.descripcion;
+                this.descripcionCorta=item.descripcionCorta;
+                this.urlImagen=item.urlImagen;
+                this.urlIcono=item.urlIcono;
                 this.dialog = true;
                 this.editedIndex=1;
             },
