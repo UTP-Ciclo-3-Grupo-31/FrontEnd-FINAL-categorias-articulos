@@ -5,11 +5,10 @@
     "node": "12.x",
     "npm": "6.x"
   },
-  "main": "main.js",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "start": "vue-cli-service serve",
+    "start": "node main.js",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
