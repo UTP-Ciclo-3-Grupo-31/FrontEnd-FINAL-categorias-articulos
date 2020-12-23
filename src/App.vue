@@ -47,7 +47,7 @@
               <div class="carousel-item active bg-light">
                 <img
                   class="rounded mx-auto d-block"
-                  src="../public\img\servicios\srv_auditoria_Grande.jpg"
+                  src=""
                   alt="Responsive image"
                 />
                 <div class="carousel-caption d-none d-md-block">
@@ -62,7 +62,7 @@
               <div class="carousel-item bg-light">
                 <img
                   class="rounded mx-auto d-block"
-                  src="../public\img\servicios\srv_trabajos.jpg"
+                  src=""
                   alt="Responsive image"
                 />
                 <div class="carousel-caption d-none d-md-block">
@@ -78,7 +78,7 @@
               <div class="carousel-item bg-light">
                 <img
                   class="rounded mx-auto d-block"
-                  src="../public\img\servicios\srv_inventario.jpg"
+                  src=""
                   alt="Responsive image"
                 />
                 <div class="carousel-caption d-none d-md-block">
