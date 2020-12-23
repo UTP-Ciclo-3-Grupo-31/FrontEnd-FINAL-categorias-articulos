@@ -17,7 +17,7 @@
                 <img class="iconoServicio"  :src="art.urlIcono" alt="">
                 <h4>{{ art.nombre }}</h4>
                 <p>
-                  {{ art.descripcionCorta }}
+                  {{ art.descripcionCorta}}
                 </p>
               </div>
             </div>
