@@ -147,7 +147,7 @@
                     { text: 'Código',value: 'codigo', sortable: false},
                     { text: 'Nombre',value: 'nombre', sortable: true},
                     { text: 'Categoría',value: 'categoria.nombre', sortable: true},
-                    { text: 'Descripción', value: 'descripcion', sortable: false },,
+                    { text: 'Descripción', value: 'descripcion', sortable: false },
                     { text: 'Descripción Corta',value: 'descripcionCorta', sortable: false},
                     { text: 'Url Icono',value: 'urlIcono', sortable: false},             
                     { text: 'Estado', value: 'estado', sortable: true }
@@ -223,7 +223,7 @@
                 this.editedIndex=-1;
                 this.descripcionCorta = '';
                 this.urlImagen = '';
-                this.urlIcono='';
+                this.urlIcono = '';
             },
             validar(){
                 this.valida=0;
