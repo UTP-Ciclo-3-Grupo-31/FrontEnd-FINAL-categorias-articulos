@@ -1,38 +1,10 @@
 {
   "name": "FRONT-END-GRUPO-31",
   "version": "0.1.0",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
-=======
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x"
-  },
-  "main": "index.js",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
->>>>>>> parent of c12160a... Cambio en arranque de app
-=======
-  "engines": {
-    "node": "12.x",
-    "npm": "6.x"
-  },
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "start": "node main.js",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
->>>>>>> parent of ea40fbc... 6
   },
   "dependencies": {
     "axios": "^0.21.0",

@@ -4,14 +4,14 @@
       <div class="d-flex justify-content-center mt-4">
         <h2>Nuestros Servicios</h2>
         </div>
-      <div class="row mt-md-5 mt-sm-5 mt-xs-5">
+      <div class="row mt-md-5 mt-sm-5 mt-xs-5 cuadroServicio">
         <div
           v-for="(art, indice) of datos"
           :key="art.id"
           class="col-lg-6 col-xs-12 border "
            v-if="art.categoriaId === 1"
         >
-          <div>
+          <div v-if="art.estado === 1">
             <div class="d-flex justify-content-center align-items-center">
               <div class="p-2" style="text-align: center;">
                 <img class="iconoServicio"  :src="art.urlIcono" alt="">
@@ -83,7 +83,7 @@
 </template>
 <style scoped>
 .iconoServicio{
- width: 150px;
+ width: 13%;
 }
 .imgCasoExito{
  margin-left: 20%;
@@ -97,6 +97,10 @@
 }
 .casoExito{
   text-align: center;
+}
+
+.cuadroServicio{
+  padding:10px;
 }
 </style>
 
